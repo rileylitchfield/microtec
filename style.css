@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans JP", sans-serif;
+}
+.nav {
+  display: flex;
+  background-color: #333;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav > a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #4caf50;
+  color: white;
+}
+
+#showcase {
+  background: url("img/oil.jpg") no-repeat center center/cover;
+  background-position: center top;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
+
+#showcase h1 {
+  width: 850px;
+  font-size: 2.3rem;
+  margin: 40px;
+  text-align: center;
+}
+
+#main {
+  height: 300px;
+  width: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 10px;
+  background-color: #fff;
+  color: #444;
+}
+
+.section {
+  border-radius: 5px;
+  padding: 20px;
+  height: 200px;
+}
+
+.img {
+  grid-column: 1 / span 1;
+  background: url("img/l3.png") no-repeat;
+  background-size: contain;
+  background-position: right;
+  min-height: 100%;
+}
+
+.content {
+  grid-column: 2 / span 1;
+}
+
+/* .section-b-img {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  background: url("img/l3.png") no-repeat;
+  background-size: contain;
+  min-height: 100%;
+}
+
+.section-b-content {
+  height: 100%;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+} */
