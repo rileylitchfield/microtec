@@ -6,6 +6,10 @@
   box-sizing: border-box;
   font-family: "Noto Sans JP", sans-serif;
 }
+
+body {
+  height: 100%;
+}
 .nav {
   display: flex;
   background-color: #333;
@@ -52,18 +56,23 @@
   width: 100%;
 }
 
+.intro {
+  background-color: azure;
+}
+
 .grid-container {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 33.3% 33.3% 33.3%;
   grid-gap: 10px;
-  background-color: #fff;
-  color: #444;
+  color: black;
+  width: 750px;
+  margin: auto;
 }
 
 .section {
   border-radius: 5px;
   padding: 20px;
-  height: 200px;
+  height: 400px;
 }
 
 .img {
@@ -71,24 +80,46 @@
   background: url("img/l3.png") no-repeat;
   background-size: contain;
   background-position: right;
-  min-height: 100%;
+  margin: 20px;
 }
 
 .content {
-  grid-column: 2 / span 1;
+  grid-column: 2 / span 2;
+  text-align: justify;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-/* .section-b-img {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  background: url("img/l3.png") no-repeat;
-  background-size: contain;
-  min-height: 100%;
+.services-grid {
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-gap: 10px;
+  color: black;
+  width: 100%;
+  margin: auto;
 }
 
-.section-b-content {
-  height: 100%;
+.service {
+  border-radius: 5px;
+  padding: 20px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ltk,
+.cal,
+.repair,
+.sales {
   text-align: center;
-  padding: 50px 30px;
-  overflow: hidden;
-} */
+  margin: 20px;
+}
+
+.fa {
+  margin: 20px 0;
+}
