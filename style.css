@@ -262,7 +262,7 @@ footer {
 
 .benefits-section {
   background-color: #e08d28;
-  height: 400px;
+  height: 73vh;
   display: flex;
   align-items: center;
 }
@@ -443,7 +443,6 @@ tr:nth-child(odd) {
   grid-area: img-2;
 }
 
-/* Test */
 .heading {
   position: relative;
   height: 20vh;
@@ -473,4 +472,56 @@ tr:nth-child(odd) {
   margin: 0 40px;
   text-align: center;
   font-weight: 900;
+}
+
+/* New Instruments */
+
+.sales-section {
+  background-color: #e08d28;
+  height: 1300px;
+  display: flex;
+  align-items: center;
+}
+
+.sales-content {
+  max-width: 750px;
+  margin: auto;
+  text-align: justify;
+}
+
+.sales-content h2 {
+  text-align: center;
+  margin-top: 75px;
+  margin-bottom: 0;
+}
+
+.sales-content p {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.sales-grid {
+  display: grid;
+  grid-template-areas:
+    "l3 nd l14c"
+    "l3is1 l3is l5";
+  margin-top: 70px;
+  grid-gap: 30px;
+}
+
+.meter img {
+  height: 199px;
+  width: auto;
+}
+
+.dosi-grid {
+  display: grid;
+  grid-template-areas: "ra dosi charger";
+  margin: 70px 0;
+  grid-gap: 30px;
+}
+
+.dosi img {
+  height: 199px;
+  width: auto;
 }
