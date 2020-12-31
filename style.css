@@ -98,18 +98,8 @@ li a:hover:not(.active) {
   background-color: #2e4a6f;
 }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
-  color: black;
-  width: 1000px;
+.intro > .container {
   margin: auto;
-}
-
-.section {
-  border-radius: 5px;
-  padding: 20px;
   height: 500px;
 }
 
@@ -262,13 +252,12 @@ footer {
 
 .benefits-section {
   background-color: #e08d28;
-  height: 73vh;
+  height: 400px;
   display: flex;
   align-items: center;
 }
 
 .benefits {
-  max-width: 750px;
   margin: auto;
   text-align: justify;
 }
@@ -288,7 +277,7 @@ footer {
 .split {
   margin: 0 auto;
   background-color: white;
-  height: auto;
+  height: 500px;
 }
 
 .split-grid {
@@ -327,6 +316,8 @@ footer {
   font-size: 1rem;
 }
 
+/* Price Table */
+
 table {
   font-size: 1.3rem;
   border-collapse: collapse;
@@ -349,30 +340,38 @@ tr:nth-child(odd) {
   background-color: darkgray;
 }
 
-/* Third Section */
+/* Other Services Section */
 
 .other-services {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  height: 450px;
   background-color: #2e4a6f;
+}
+
+.other-info {
+  flex-direction: column !important;
+  max-width: 400px;
+  margin: 0 20px;
+  grid-area: info;
+  color: white;
 }
 
 .other-heading {
   grid-area: heading;
   text-align: center;
-  margin-bottom: 40px;
   color: white;
+  margin-top: 20px;
+}
+
+.other-heading h2 {
+  margin-top: 0px;
 }
 
 .other-services-grid {
+  margin: auto;
   display: grid;
   grid-template-areas:
-    "heading heading heading heading heading heading"
-    "emergency emergency emergency info info info"
-    "details details details details details details";
+    "heading heading "
+    "emergency info"
+    "details details";
 }
 
 .other-services-emergency {
@@ -386,17 +385,6 @@ tr:nth-child(odd) {
 .other-services-emergency h3 {
   text-align: center;
   margin-bottom: 20px;
-}
-
-.other-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 400px;
-  margin: 0 20px;
-  grid-area: info;
-  color: white;
 }
 
 .other-info h3 {
@@ -413,39 +401,25 @@ tr:nth-child(odd) {
 }
 
 .details {
-  margin: 40px auto;
-  max-width: 750px;
+  max-height: 100px;
+  margin-top: 0;
+
   grid-area: details;
   text-align: center;
 }
 
-.repair-grid {
+.repair-section {
   height: 400px;
-  width: 1000px;
   margin: auto;
-  display: grid;
-  grid-template-areas: "img-1 repair-text repair-text repair-text img-2";
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .repair-text {
-  grid-area: repair-text;
   text-align: justify;
-}
-
-.img-1 {
-  grid-area: img-1;
-}
-
-.img-2 {
-  grid-area: img-2;
 }
 
 .heading {
   position: relative;
-  height: 20vh;
+  height: 150px;
   display: flex;
   justify-content: center;
   text-align: center;
@@ -469,7 +443,7 @@ tr:nth-child(odd) {
   position: relative;
   width: 850px;
   font-size: 2.5rem;
-  margin: 0 40px;
+  margin: auto 40px;
   text-align: center;
   font-weight: 900;
 }
@@ -524,4 +498,39 @@ tr:nth-child(odd) {
 .dosi img {
   height: 199px;
   width: auto;
+}
+
+/* *** */
+/* UTILITIES */
+/* *** */
+
+.container {
+  max-width: 800px;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+/* Grid */
+.grid {
+  display: grid;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+
+.grid-3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+/* Flexbox */
+.flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
