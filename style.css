@@ -275,16 +275,9 @@ footer {
 /* Second Section */
 
 .split {
-  margin: 0 auto;
+  margin: auto;
   background-color: white;
   height: 500px;
-}
-
-.split-grid {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
 }
 
 .split-img {
@@ -292,7 +285,7 @@ footer {
 }
 
 .split-img img {
-  height: 400px;
+  height: 250px;
   width: auto;
 }
 
@@ -319,7 +312,7 @@ footer {
 /* Price Table */
 
 table {
-  font-size: 1.3rem;
+  font-size: 1rem;
   border-collapse: collapse;
   width: auto;
   margin: 0 auto;
@@ -329,7 +322,7 @@ td,
 th {
   border: 1px solid black;
   text-align: left;
-  padding: 8px;
+  padding: 4px;
 }
 
 tr:nth-child(even) {
@@ -358,11 +351,8 @@ tr:nth-child(odd) {
   grid-area: heading;
   text-align: center;
   color: white;
-  margin-top: 20px;
-}
-
-.other-heading h2 {
-  margin-top: 0px;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .other-services-grid {
@@ -508,6 +498,7 @@ tr:nth-child(odd) {
   max-width: 800px;
   border-radius: 5px;
   padding: 20px;
+  margin: auto;
 }
 
 /* Grid */
