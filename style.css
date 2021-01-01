@@ -103,18 +103,14 @@ li a:hover:not(.active) {
   height: 500px;
 }
 
-.img {
+#img-meter {
   grid-column: 1 / span 1;
-  background: url("img/l3.png") no-repeat;
-  background-size: contain;
-  background-position: right;
-  margin: 20px;
+  max-width: 300px;
 }
 
 .content {
   grid-column: 2 / span 2;
   text-align: justify;
-  margin: 0 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -145,14 +141,10 @@ li a:hover:not(.active) {
   padding: 50px;
 }
 
-.service {
+.card {
   border-radius: 5px;
   padding: 20px;
   height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
   text-align: center;
   background-color: #e08d28;
 }
@@ -285,7 +277,7 @@ footer {
 }
 
 .split-img img {
-  height: 250px;
+  height: 300px;
   width: auto;
 }
 
@@ -314,7 +306,7 @@ footer {
 table {
   font-size: 1rem;
   border-collapse: collapse;
-  width: auto;
+  width: 300px;
   margin: 0 auto;
 }
 
@@ -524,4 +516,11 @@ tr:nth-child(odd) {
   flex-direction: row;
   justify-content: center;
   align-items: center;
+}
+
+.flex-start {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
 }
